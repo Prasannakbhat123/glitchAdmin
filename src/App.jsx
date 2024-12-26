@@ -37,16 +37,18 @@ export default function App() {
         backgroundPosition: 'center'
       }}
     >
-      <h1 className="text-2xl font-bold mb-4 text-white">Chained Default / Subsequent Rates with Deletion</h1>
-      <div className="border p-4 bg-white rounded shadow">
-        <Timeline defaultRates={defaultRates} endTime={endTime} maxTime={maxTime} />
-        <Controls 
-          defaultRates={defaultRates} 
-          setDefaultRates={setDefaultRates} 
-          endTime={endTime}
-          setEndTime={setEndTime}
-          totalCost={totalCost}
-        />
+      <h1 className="text-4xl font-bold mb-4 text-purple-400 py-5 text-center">Chained Default / Subsequent Rates with Deletion</h1>
+      <div className="border p-4 rounded-lg shadow-xl backdrop-blur-md bg-white bg-opacity-5 border-white border-opacity-20">
+  <Timeline defaultRates={defaultRates} endTime={endTime} maxTime={maxTime} />
+  <Controls 
+    defaultRates={defaultRates} 
+    setDefaultRates={setDefaultRates} 
+    endTime={endTime}
+    setEndTime={setEndTime}
+    totalCost={totalCost}
+  />
+
+
       </div>
     </div>
   );

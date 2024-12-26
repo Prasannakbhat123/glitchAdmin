@@ -17,7 +17,7 @@ export default function Timeline({defaultRates, endTime, maxTime}) {
   };
 
   return (
-    <div className="relative overflow-x-scroll w-full h-24 border-b border-t border-gray-300 bg-gray-50">
+    <div className="relative overflow-x-scroll w-full h-24 border-b border-t border-gray-300 bg-purple-100">
       <div className="relative" style={{minWidth: intervals.length * 100 + 'px', height:'100%'}}>
         {/* Draw timeline lines */}
         {intervals.map((time) => (
